@@ -31,6 +31,9 @@ public class App
 		chromePrefs.put("credentials_enable_service", false);
 		chromePrefs.put("password_manager_enabled", false);
 		chromeOptions.add("disable-plugins");
+		chromeOptions.add("--headless");
+		chromeOptions.add("--no-sandbox");
+		chromeOptions.add("--disable-dev-shm-usage");
 		chromeOptions.add("disable-extensions");
 		chromeOptions.add("allow-running-insecure-content");
 		chromeOptions.add("ignore-certificate-errors");
