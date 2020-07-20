@@ -16,7 +16,7 @@ public class App
     public static void test()
     {	
     	String cdir = System.getProperty("user.dir");
-    	System.setProperty("webdriver.chrome.driver", cdir + "/drivers/chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", cdir + "/drivers/chromedriver");
     	WebDriver driver = new ChromeDriver();
     	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
